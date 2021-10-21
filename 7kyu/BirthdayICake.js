@@ -10,10 +10,18 @@
 
 // If the carpet catches fire, return 'Fire!', if not, return 'That was close!'.
 
+//var 1
 function cake(x, y){
     if (y.split('').reduce((a,b,i)=>a+(i%2===0 ? b.charCodeAt(0) : b.charCodeAt(0)-96),0) >= (x * 0.7)){
      return 'Fire!'
     }else{
      return 'That was close!'
     }
+  }
+
+  //var 2
+
+  function cake(x, y){ 
+    let z = y.split('').reduce((a,b,i) => a + (i%2 === 0 ? b.charCodeAt() : b.charCodeAt() - 96),0);
+    return  z >= x * 0.7 ? 'Fire!' : 'That was close!';
   }
