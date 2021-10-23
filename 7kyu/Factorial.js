@@ -7,7 +7,7 @@ More details about factorial can be found here.
 
 */
 
-
+//var1
 function factorial(n)
 {
   if(n < 0 || n > 12){
@@ -15,4 +15,18 @@ function factorial(n)
   }else {
     return (n !=1 && n != 0) ? (n * factorial(n-1)): 1;
     }
+}
+
+//var2
+function factorial(n)
+{
+  if (n < 0 || n > 12) {
+    throw new RangeError("The argument must be between 1 and 12.")
+  }
+  
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorial(n-1);
+  }
 }
