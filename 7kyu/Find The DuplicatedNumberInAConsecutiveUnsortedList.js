@@ -9,6 +9,16 @@ You should return the duplicate value as a single integer.
 
 */
 
+//var1
 function findDup( arr ){
     return arr.sort().find((e,i)=> e == arr[i+1]);
+  }
+//var2
+function findDup( arr ){
+    let x = arr.sort();
+    for (let i = 0; i < x.length; i++){
+      if(x[i] == x[i+1]){
+        return x[i];
+      }
+    }
   }
