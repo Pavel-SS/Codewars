@@ -21,3 +21,7 @@ function mygcd(x,y){
       }
     }
   }
+
+  //var 3
+
+  const mygcd = (a, b) => b ? mygcd(b, a % b) : a;
