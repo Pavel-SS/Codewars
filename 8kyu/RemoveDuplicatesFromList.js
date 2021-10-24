@@ -14,10 +14,14 @@ function distinct(a) {
       }
     }
     return x;
-  }
+}
 
 //var2
 function distinct(a) {
     return [...new Set(a)];
-  }
+}
 
+//var3
+function distinct(a) {
+    return Array.from(new Set(a));
+}
