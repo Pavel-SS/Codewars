@@ -7,6 +7,8 @@ Note: if there is nothing to sum, the sum is default to 0.
 
 */
 
+
+//var1
 function positiveSum(arr) {
     let x = [];
     for (let i of arr){
@@ -15,4 +17,10 @@ function positiveSum(arr) {
       }
     }
     return x.reduce((a,b)=>{return a+b},0);
+  }
+
+//var2
+
+function positiveSum(arr) {
+    return arr.filter(x => x > 0).reduce((elem1, elem2)=> elem1+elem2,0)
   }
