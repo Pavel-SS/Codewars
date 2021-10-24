@@ -24,3 +24,15 @@ function positiveSum(arr) {
 function positiveSum(arr) {
     return arr.filter(x => x > 0).reduce((elem1, elem2)=> elem1+elem2,0)
   }
+
+//var3
+
+function positiveSum(arr) {
+    var total = 0;    
+    for (i = 0; i < arr.length; i++) {    
+      if (arr[i] > 0) {                   
+        total += arr[i];                  
+      }
+    }
+    return total;                        
+  }
