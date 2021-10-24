@@ -5,6 +5,7 @@ The order of the sequence has to stay the same.
 
 */
 
+//var1
 function distinct(a) {
     let x = [];
     for(let i of a){
@@ -14,3 +15,9 @@ function distinct(a) {
     }
     return x;
   }
+
+//var2
+function distinct(a) {
+    return [...new Set(a)];
+  }
+
