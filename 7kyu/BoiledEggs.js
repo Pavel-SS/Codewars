@@ -19,9 +19,13 @@ Example (Input --> Output)
 
 */
 
-
+//var 1
 function cookingTime(eggs) {
     let  serving = Math.ceil(eggs/8);
    
      return  serving * 5;
    }
+//best practic
+function cookingTime(eggs) {
+    return 5 * Math.ceil(eggs / 8);
+  }
