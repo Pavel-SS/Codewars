@@ -16,6 +16,7 @@ is_prime(-1) / false /
 
 */
 
+//var1
 function isPrime(num) {
  
     let x = 2;
@@ -26,3 +27,13 @@ function isPrime(num) {
    return num > 1;
 
 }
+
+//var2
+function isPrime(num) {
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+      if(num % i === 0) {
+        return false;
+      }
+    }
+    return num > 1
+  }
