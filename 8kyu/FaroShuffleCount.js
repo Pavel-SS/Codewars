@@ -16,7 +16,7 @@ Write a function that takes an integer n and returns an integer representing the
 Assume n is an even number between 2 and 2000.
 
 */
-
+//var1
 function faroCount(deckSize){
     let x = 1;
     for (let shuffles = 1; shuffles <= deckSize + 2;  shuffles++){
@@ -25,4 +25,16 @@ function faroCount(deckSize){
       }
     }
     return x;
+  }
+
+//var2
+function faroCount(deckSize){
+    let term = 1,
+        shuffles = 1;
+    if (deckSize < 4){
+      return 1
+    }else{
+      for ( shuffles ; term!== (Math.pow(2,shuffles)%(deckSize-1)); shuffles++){}
+       return  shuffles
+    }
   }
