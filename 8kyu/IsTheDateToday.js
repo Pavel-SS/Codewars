@@ -2,8 +2,7 @@
 
 // Make sure that your function does not return a false positive by just checking just the day.
 
-
 function isToday(date) {
     let yesterday = new Date();
-     return yesterday.getDate() == date.getDate() ? true:false 
+     return yesterday.toDateString() === date.toDateString()
   }
