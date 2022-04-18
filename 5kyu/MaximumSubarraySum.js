@@ -6,6 +6,7 @@
 
 // Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
 
+//var1
 const maxSequence = (arr) => {
     const sum = [],
           newArr= []; 
@@ -18,4 +19,24 @@ const maxSequence = (arr) => {
         sum.push(Math.max(...newArr));
     })
     return Math.max(Math.max(...sum),0)
+  }
+//var 2
+var maxSequence = function(arr){
+    var currentSum = 0;
+    return arr.reduce(function(maxSum, number){
+        currentSum = Math.max(currentSum+number, 0);
+        return Math.max(currentSum, maxSum);
+    }, 0);
+}
+
+//var 3
+
+var maxSequence = function(arr){
+    var min = 0, ans = 0, i, sum = 0;
+    for (i = 0; i < arr.length; ++i) {
+      sum += arr[i];
+      min = Math.min(sum, min);
+      ans = Math.max(ans, sum - min);
+    }
+    return ans;
   }
