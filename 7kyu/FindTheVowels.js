@@ -23,3 +23,26 @@ function vowelIndices(word){
     }
     return num
   }
+
+//var 2
+function vowelIndices(word){
+    const vowels = ['a','e','i','o','u','y']
+    const werb = word.toLowerCase()
+    let num = []
+    for (let i = 0; i < arr.length; i++){
+     if(vowels.includes(werb[i])){
+       num.push(i+1)
+     }
+    }
+    return num
+  }
+//var 3
+function vowelIndices(word) {
+    var arr = [];
+    for(var i = 0; i < word.length; i++) {
+      if(/[aeioyu]/i.test(word[i])) {
+        arr.push(i+1);
+      }
+    }
+    return arr;
+  }
