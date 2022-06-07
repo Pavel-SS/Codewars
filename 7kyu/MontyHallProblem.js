@@ -24,3 +24,10 @@ function montyHall(correctDoorNumber, participantGuesses) {
       return Math.round(100 - 100 * third/sum)
     }
   }
+
+//var2 
+function montyHall(correctDoorNumber, participantGuesses) {
+    const correctDoor = participantGuesses.filter(e => e === correctDoorNumber).length;
+    const countGuesses = participantGuesses.length;
+    return Math.round(100 - 100 * correctDoor  / countGuesses)
+  }
