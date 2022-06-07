@@ -34,3 +34,16 @@ function isCoprime(x, y) {
     }
     return test
   }
+
+//var2
+function isCoprime(x, y) {
+    // you can change MAX to MIN
+    let max = Math.max(x,y);
+    
+    for(let i = 2; i < max; i++ ){
+      if(x%i==0 && y%i==0){
+        return false
+      }
+    }
+    return true
+  }
