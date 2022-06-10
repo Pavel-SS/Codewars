@@ -15,3 +15,8 @@ function solution(str, ending){
      }
      return arr.reverse().join('') == ending ? true : false
   }
+
+  //var2
+  function solution(str, ending){
+    return str.endsWith(ending);
+  }
