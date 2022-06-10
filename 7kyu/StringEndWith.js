@@ -4,14 +4,14 @@
 
 // solution('abc', 'bc') // returns true
 // solution('abc', 'd') // returns false
+
+
+//var1
 function solution(str, ending){
-    const str2 = str.split('')
+    const str2 = str.split('').reverse()
     let arr = []
-     for(let i = str.length; i <= str.length && i > ending.length; i--){
-      arr.unshift(str2[i])
+     for(let i = 0; i < ending.length; i++){
+      arr.push(str2[i])
      }
-     arr.join('') == ending ? console.log(arr.join('') + " " +ending) : console.log(arr.join('') + " " +ending) 
+     return arr.reverse().join('') == ending ? true : false
   }
-  solution('gffkffe', 'ffe')
-  // solution('abcde', 'abc')
-  solution('abcde', 'cde')
