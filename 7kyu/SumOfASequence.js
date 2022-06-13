@@ -18,3 +18,12 @@ const sequenceSum = (begin, end, step) => {
 
   //var 2
   sequenceSum = (begin, end, step) =>  begin > end ? 0 : begin + sequenceSum(begin + step, end, step)
+
+  //var3
+  const sequenceSum = (begin, end, step) => {
+      let sum = 0;
+      for (let i = begin; i <= end; i += step) {
+          sum += i;
+      }
+      return sum
+  };
