@@ -13,6 +13,13 @@
 // 3 --> 6
 // -10 --> 0
 
+//var 1
 function triangular( n ) {
     return n > 0 ? (n * (n + 1))/2 : 0
    }
+
+//var 2
+function triangular(n) {
+    if (n < 0) return 0;
+    return n * (n + 1) / 2;
+  }
