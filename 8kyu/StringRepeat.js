@@ -12,3 +12,7 @@ function repeatStr (n, s) {
     }
     return x;
   }
+//var 2
+function repeatStr (n, s) {
+    return s.repeat(n)
+  }
