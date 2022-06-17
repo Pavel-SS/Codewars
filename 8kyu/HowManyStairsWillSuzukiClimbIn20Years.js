@@ -18,3 +18,14 @@
 function stairsIn20(s){
     return  20*s.reduce((a,b)=> a + b.reduce((c,d)=> c+d),0)
   }
+
+//var 2
+function stairsIn20(s){
+    let elm = 0
+    for(let i = 0; i < s.length; i++){
+      for(let j = 0; j< s[i].length; j++){
+        elm += s[i][j];
+      }
+    }
+    return elm * 20
+  }
