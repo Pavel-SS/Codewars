@@ -9,5 +9,13 @@
 function oddCount(n){
     return Math.floor(n / 2)
   }
-
-  
+//var 2 (not best)
+function oddCount(n){
+    let arr = []
+    for(let i = 0; i < n; i++){
+        if(i % 2 !== 0){
+            arr.push(i)
+        }
+    }
+    return arr.length
+}
