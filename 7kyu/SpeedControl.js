@@ -31,3 +31,8 @@ function gps(s, x) {
 
 //var 2
 const gps = (s, x) => Math.floor(3600 * x.slice(1).reduce((m, d, i) => Math.max(m, d - x[i]), 0) / s);
+
+// var 3 (best)
+function gps(s, x) {
+    return Math.max(...x.slice(1).map((a, i) => 3600 * (a - x[i]) / s)) | 0
+  }
