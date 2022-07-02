@@ -39,7 +39,7 @@ const rps = (p1, p2) => {
   };
 
   //var 2
-  const rps = (p1, p2) => {
+  const rps2 = (p1, p2) => {
     if (p1 == p2)
       return 'Draw!';
       
